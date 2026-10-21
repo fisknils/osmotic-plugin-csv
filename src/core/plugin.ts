@@ -1,6 +1,6 @@
 import type { OsmoticPlugin } from 'osmotic';
-import type { CsvOptions, CsvPluginOptions } from './types.js';
-import { CsvWriter } from './writer.js';
+import type { CsvOptions, CsvPluginOptions } from '../types/options.js';
+import { CsvWriter } from './CsvWriter.js';
 
 /**
  * Create the plugin. Pass it to `Osmotic.plugins()` before building chains.

@@ -1,6 +1,6 @@
 import { createWriteStream, type WriteStream } from 'node:fs';
 import type { Data, Exporter } from 'osmotic';
-import type { CsvOptions } from './types.js';
+import type { CsvOptions } from '../types/options.js';
 
 // CSV file written one row at a time. osmotic creates it on the first row of a run;
 // the header comes from the columns option or that row's keys.
