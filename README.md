@@ -122,9 +122,9 @@ first.
 
 | File                              | Responsibility                                |
 | --------------------------------- | --------------------------------------------- |
-| `src/plugin.ts`                   | The plugin and its exporter                   |
-| `src/writer.ts`                   | Streaming CSV writer                          |
-| `src/types.ts`                    | Options, and the `csv` entry in `ExportTypes` |
+| `src/core/plugin.ts`              | The plugin and its exporter                   |
+| `src/core/CsvWriter.ts`           | Streaming CSV writer                          |
+| `src/types/options.ts`            | Options, and the `csv` entry in `ExportTypes` |
 | `src/index.cts` / `src/index.mts` | CommonJS and ESM entry points                 |
 
 ## License

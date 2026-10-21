@@ -2,4 +2,4 @@
 import csv from './index.cjs';
 
 export default csv;
-export type { CsvOptions, CsvPluginOptions } from './types.js';
+export type { CsvOptions, CsvPluginOptions } from './types/options.js';
