@@ -112,7 +112,7 @@ declare module 'osmotic' {
 ```sh
 npm install            # install dependencies (does not build)
 npm run build          # clean dist/ and compile src/ with tsc (also runs before npm publish)
-npm test               # build, type check test/types.*, and run the tests
+npm test               # build, type check test/ and test-d/, and run the tests with tsx
 npm run format         # format everything with Prettier
 npm run format:check   # check formatting without writing
 ```
