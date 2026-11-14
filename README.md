@@ -117,9 +117,6 @@ npm run format         # format everything with Prettier
 npm run format:check   # check formatting without writing
 ```
 
-The tests use the osmotic checkout next to this one (`file:../osmotic`), so build it
-first.
-
 | File                              | Responsibility                                |
 | --------------------------------- | --------------------------------------------- |
 | `src/core/plugin.ts`              | The plugin and its exporter                   |

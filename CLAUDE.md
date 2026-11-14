@@ -88,7 +88,7 @@ Commit the tests before the code, so the history shows they came first.
 ### Writing tests
 
 - Use `node:test` and `node:assert/strict`. Tests are TypeScript, run with `tsx`, and import the plugin from `src/` and osmotic from `osmotic`, loading the plugin through `Osmotic.plugins()` the way users do. The only exception is `test/package.ts`, which checks the build in `dist/`.
-- osmotic is a dev dependency on the checkout next to this one (`file:../osmotic`). Build osmotic before running the tests here; CI checks out osmotic's `master` next to this repository and builds it. When a change depends on unreleased osmotic behavior, say so in `PLAN.md` under Follow-ups.
+- osmotic is a peer dependency, which npm installs from the registry, so the tests run against the published osmotic version in `package-lock.json`. When a change depends on unreleased osmotic behavior, say so in `PLAN.md` under Follow-ups.
 - Serve pages with `createSite()` from `test/helpers/`: it maps paths to pages on a local HTTP server and records every request in `site.requests`. Use `openSite(t, pages)`, which closes the site when test `t` ends.
 - Prefer the scenario sites in `test/helpers/sites/` (a web shop whose values need quoting) over one-off pages, and add pages to them when a test needs a situation real sites have. Keep one-off pages for syntax details, such as a quoting edge case.
 - Run chains with `scrape()` from `test/helpers/`, which returns the rows and every event of the run.
